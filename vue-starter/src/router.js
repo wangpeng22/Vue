@@ -1,14 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/pages/index'
+
 Vue.use(Router)
+
+import index from '@/pages/index'
+import parentprops from '@/pages/props/parent.vue'
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'index',
-      component: index
+    	path: '/', 
+    	name: 'index', 
+    	component: index
+    },
+    {
+    	path: '/props', 
+    	name: 'parentprops', 
+    	component: parentprops
     }
   ]
 })
