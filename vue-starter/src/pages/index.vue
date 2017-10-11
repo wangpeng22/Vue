@@ -4,6 +4,7 @@
 		<ol>
       		<li>父->子 组件通讯：props <router-link to="props" >点击进入</router-link></li>
       		<li>子->父 组件通讯：emit <router-link to="emit" >点击进入</router-link></li>
+      		<li>普通组件通讯：Global Bus <router-link to="/bus">点击进入</router-link></li>
       	</ol>
 	</div>
 </template>
