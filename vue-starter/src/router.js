@@ -6,7 +6,8 @@ Vue.use(Router)
 import index from '@/pages/index'
 import parentprops from '@/pages/props/parent.vue'
 import parentemit from '@/pages/emit/parent.vue'
-import busdemo      from '@/pages/bus/demo.vue'
+import busdemo from '@/pages/bus/demo.vue'
+import tododemo from '@/pages/todo/index.vue'
 
 export default new Router ({
   routes : [
@@ -29,6 +30,11 @@ export default new Router ({
     	path : '/bus',
     	name : 'busdemo',
     	component : busdemo
+    },
+    {
+    	path : '/todo',
+    	name : 'tododemo',
+    	component : tododemo
     }
   ]
 })
